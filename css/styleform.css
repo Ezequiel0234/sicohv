@@ -9,9 +9,13 @@ body {
   width: 100%;
   min-height: 100vh;
   background: white;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+}
+
+.logo{
+   text-align: center;
 }
 
 .container {
