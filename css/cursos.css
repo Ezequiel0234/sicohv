@@ -1,38 +1,90 @@
+:root{
+    --primary-color: #eee;
+    --fund-color: rgb(228, 255, 220);
+    --dp-fundo: rgb(108, 201, 136);
+    --color-hover: rgb(28, 168, 103);
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header */
+
 div#logo img{
-    width: 80px;
-    padding: 10px;
+    width: 90px;
+    padding: 10px 0 5px 15px;
 }
 
-/* Botões do curso */
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
 
-div#dropdown_menu{
-    background-color: #faebd7;
+div.cabecalho div#portal{
+    padding: 10px 20px 0 0;
+}
+
+/* Body */
+
+div#inf{
+    padding: 3px 0 3px 30px;
+}
+
+div#container{
+    background-color: var(--fund-color);
+    margin-top: 40px;
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 13px rgba(151, 151, 151, 0.753);
+}
+
+.dp ul{
+    list-style-type: none;
+    padding: 0;
+    margin-right: 70px;
+}
+
+.dp ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+    background-color: var(--dp-fundo);
+    transition: background .3s;
+}
+
+.curso{
+    border-radius: 8px;
+    margin: 10px 0 0 45px;
+}
+
+.dp ul li a:hover{
+    background-color: var(--color-hover);
+}
+
+/* sub menu */
+
+.dp ul ul{
     display: none;
     position: absolute;
+    width: 100px;
 }
 
-div#dropdown_menu a{
+.dp ul li:hover ul{
     display: block;
 }
 
-ul li#dropdown_menu:hover div#dropdown_menu{
+.dp ul ul li a{
     display: block;
-}
-
-ul li a{
-    text-decoration: none;
-    color: #eee;
-    padding: 0.5em;
-    background-color: rgb(107, 107, 107);
-    border-radius: 10px;
-}
-
-ul li{
-    list-style-type: none;
 }
