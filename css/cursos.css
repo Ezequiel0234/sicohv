@@ -1,6 +1,6 @@
 :root{
     --primary-color: #eee;
-    --fund-color: rgb(228, 255, 220);
+    --fund-color: rgb(237, 255, 232);
     --dp-fundo: rgb(108, 201, 136);
     --color-hover: rgb(28, 168, 103);
 }
@@ -41,7 +41,7 @@ div#container{
     height: 250px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 1px 1px 13px rgba(151, 151, 151, 0.753);
+    box-shadow: 1px 1px 15px rgba(151, 151, 151, 0.603);
 }
 
 .dp ul{
@@ -83,6 +83,7 @@ div#container{
 
 .dp ul li:hover ul{
     display: block;
+    margin-left: 50px;
 }
 
 .dp ul ul li a{
