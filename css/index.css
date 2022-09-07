@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    width: 300px;
+    margin: 20px 0;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: #6dd87f;
+}
+
+#gap { /*espaço no topo da página*/
+    height: 150px;
+}

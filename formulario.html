@@ -10,34 +10,37 @@
 
   </head>
   <body>
-
-    <div class="logo">
-       <img src="img/if.jpeg" width="200px" />
+    <div class="center">
+      <div class="logo">
+        <img src="img/if.jpeg" width="200px" />
+     </div>
+ 
+ 
+     <div class="container">
+       <div class="header">
+         <h2>LOGIN</h2>
+       </div>
+ 
+       <form id="form" class="form" action="manipulacao.php" method="post">
+          
+         <div class="form-control">
+           <label for="nome"></label>
+           <input type="text" id="usuario" name="usuario" placeholder="Usuário"/>
+         </div>
+ 
+ 
+         <div class="form-control">
+           <label for="senha"></label>
+           <input type="password" id="senha" name="senha" placeholder="Senha"/>
+         </div>
+         <div id="botao">
+           <button type="submit">Entrar</button>
+         </div>
+       </form>
+     </div>
     </div>
 
-
-    <div class="container">
-      <div class="header">
-        <h2>LOGIN</h2>
-      </div>
-
-      <form id="form" class="form" action="manipulacao.php" method="post">
-         
-        <div class="form-control">
-          <label for="nome"></label>
-          <input type="text" id="usuario" name="usuario" placeholder="Usuário"/>
-        </div>
-
-
-        <div class="form-control">
-          <label for="senha"></label>
-          <input type="password" id="senha" name="senha" placeholder="Senha"/>
-        </div>
-        <div id="botao">
-          <button type="submit">entrar</button>
-        </div>
-      </form>
-    </div>
+   
   
 
   </body>
