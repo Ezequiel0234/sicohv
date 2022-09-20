@@ -23,52 +23,59 @@
     </div>
     <!--Horários da turma-->
     <div class="row">
-        <table id="horarios">
-            <tr>
-                <th>hora</th>
-                <th>seg</th>
-                <th>ter</th>
-                <th>qua</th>
-                <th>qui</th>
-                <th>sex</th>
-                <th>sab</th>
-            </tr>
-            <tr>
-                <td colspan="7">MATUTINO<td>
-            </tr>
-            <?php
+        <?php
 
-    
-            // Dados para conexão com banco
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "turmas";
+        // Dados para conexão com banco
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "turmas";
 
-            // Criar conexão com o banco
-            $conn = new mysqli($servername, $username, $password, $database);
+        // Criar conexão com o banco
+        $conn = new mysqli($servername, $username, $password, $database);
 
-            // Checar conexão
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+        // Checar conexão
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
 
-            // Consulta sql:
-            $sql = "SELECT hora,
-                (SELECT materia FROM materias WHERE materias.id = ipi3.seg) AS seg,
-                (SELECT materia FROM materias WHERE materias.id = ipi3.ter) AS ter,
-                (SELECT materia FROM materias WHERE materias.id = ipi3.qua) AS qua,
-                (SELECT materia FROM materias WHERE materias.id = ipi3.qui) AS qui,
-                (SELECT materia FROM materias WHERE materias.id = ipi3.sex) AS sex,
-                (SELECT materia FROM materias WHERE materias.id = ipi3.sab) AS sab
-                FROM ipi3";
+        // Consulta sql:
+        $sql = "SELECT hora,
+            (SELECT materia FROM materias WHERE materias.id = ipi3.seg) AS seg,
+            (SELECT materia FROM materias WHERE materias.id = ipi3.ter) AS ter,
+            (SELECT materia FROM materias WHERE materias.id = ipi3.qua) AS qua,
+            (SELECT materia FROM materias WHERE materias.id = ipi3.qui) AS qui,
+            (SELECT materia FROM materias WHERE materias.id = ipi3.sex) AS sex,
+            (SELECT materia FROM materias WHERE materias.id = ipi3.sab) AS sab
+            FROM ipi3";
 
-            $result = $conn->query($sql);
+        $result = $conn->query($sql);
 
-            $conn->close();
+        // Encerrar conexão
+        $conn->close();
 
-            ?>
-        </table>
+        // Construção do html da tabela dos horários
+        $table = '<table id="horarios"><tr>';
+        $columns = ['hora', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
+        for ($i = 0; $i < 7; $i++) {
+            $table .= '<th>' . $columns[$i];
+        }
+        $table .= '<tr><td colspan="7">MATUTINO<td></tr>';        
+        while($row = $result->fetch_assoc()) {
+            $table .= "<tr><td>" . $row["hora"] .
+                "</td><td>" . $row["seg"] .
+                "</td><td>" . $row["ter"] .
+                "</td><td>" . $row["qua"] .
+                "</td><td>" . $row["qui"] .
+                "</td><td>" . $row["sex"] .
+                "</td><td>" . $row["sab"] .
+                "</td></tr>";
+        }
+        $table .= '</table>';
+
+        echo $table;
+
+        ?>
     </div>
 </body>
 </html>
