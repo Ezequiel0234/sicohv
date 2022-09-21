@@ -25,19 +25,8 @@
     <div class="row">
         <?php
 
-        // Dados para conexão com banco
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "turmas";
-
-        // Criar conexão com o banco
-        $conn = new mysqli($servername, $username, $password, $database);
-
-        // Checar conexão
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+        // Conexão com o banco (dados da conexão armazendados na variável $conn)
+        require 'php/conexao.php';
 
         // Consulta sql:
         $sql = "SELECT hora,
