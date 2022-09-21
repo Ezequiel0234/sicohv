@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/padrao.css">
     <link rel="stylesheet" href="css/portal-aluno.css">
     <title>SICOHV</title>
 </head>
 <body>
-    <div class="cabecalho">
-        <div id="logo">
-            <img src="img/if.jpeg">
+    <!--Início da página-->
+    <div class="row">
+        <div class="col-25" id="logo">
+            <img src="img/if.jpeg" width="90px">
         </div>
-        <div id="portal">
-            <h1>Portal do Professor</h1>
+        <div class="col-75">
+            <h2 id="titulo">Portal do Professor</h2>
         </div>
     </div>
-    <div>
-        <?php
-            
-        ?>
+    <div class="row" id="turma">
+        <h2>IPI - 3°</h2>
+    </div>
+    <!--Horários da turma-->
+    <div class="row">
+
     </div>
 </body>
 </html>
