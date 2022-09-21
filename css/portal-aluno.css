@@ -30,7 +30,6 @@
 
 #horarios tr td {
     padding: 5px 0;
-    /*border: 1px solid black;*/
-    font-size: 2px;
-    background-color: brown;
+    border: 1px solid black;
+    font-size: 10px;
 }

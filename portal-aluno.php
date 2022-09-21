@@ -58,18 +58,18 @@
         $table = '<table id="horarios"><tr>';
         $columns = ['hora', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
         for ($i = 0; $i < 7; $i++) {
-            $table .= '<th>' . $columns[$i];
+            $table .= '<th>' . $columns[$i] . '</th>';
         }
         $table .= '<tr><td colspan="7">MATUTINO<td></tr>';        
         while($row = $result->fetch_assoc()) {
-            $table .= "<tr><td>" . $row["hora"] .
-                "</td><td>" . $row["seg"] .
-                "</td><td>" . $row["ter"] .
-                "</td><td>" . $row["qua"] .
-                "</td><td>" . $row["qui"] .
-                "</td><td>" . $row["sex"] .
-                "</td><td>" . $row["sab"] .
-                "</td></tr>";
+            $table .= '<tr>';
+            for ($i = 0; $i < 7; $i++) {
+                $table .= '<td>' . $row[$columns[$i]] . '</td>';
+            }
+            $table .= '</tr>';
+            if ($row['hora'] == '08:40') $table .= '<tr><td>09:30</td><td colspan="6">INTERVALO<td></tr>';
+            else if ($row['hora'] == '11:30') $table .= '<tr><td colspan="7">VESPERTINO<td></tr>';
+            else if ($row['hora'] == '15:10') $table .= '<tr><td>16:00</td><td colspan="6">INTERVALO<td></tr>';
         }
         $table .= '</table>';
 
