@@ -1,21 +1,35 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+#titulo {
+    margin: 15px 2%;
+    padding: 10px 5%;
+    background-color: rgb(146, 241, 175);
+    border-radius: 25px;
 }
 
-div {
-    text-align: center;
+#logo {
+    margin-top: 15px;
 }
 
-/* Header */
-
-div#logo img{
-    width: 90px;
-    padding: 10px 0 5px 15px;
+#turma {
+    margin: 10px 0;
 }
 
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
+#horarios {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#horarios tr {
+    border: 1px solid black;
+}
+
+#horarios th {
+    background-color: rgb(125, 248, 248);
+    padding: 5px 0;
+}
+
+#horarios tr td {
+    padding: 5px 0;
+    border: 1px solid black;
+    font-size: 10px;
 }

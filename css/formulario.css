@@ -1,0 +1,48 @@
+.form {
+  width: 400px;
+  overflow: auto;
+}
+
+.form form {
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  margin-bottom: 7px;
+  overflow: auto;
+}
+
+.form h2 {
+  border-radius: 10px 10px 0px 0px;
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.form input {
+  box-sizing: border-box;
+  width: 90%;
+  padding: 10px;
+  margin: 25px 5%;
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form button {
+  box-sizing: border-box;
+  display: block;
+  background-color: #6dd87f;
+  border: 2px solid #6dd87f;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  width: 20%;
+  margin: 10px 40%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#logo {
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
