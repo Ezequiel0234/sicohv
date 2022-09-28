@@ -1,7 +1,5 @@
 <?php
 
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -16,7 +14,7 @@
 </head>
 <body>
     <div class="row" id="logo">
-        <img src="img/if.jpeg" width="200px" />
+        <a href="index.html"><img src="img/if.jpeg" width="200px"/></a>
     </div>
     <div class="row">
         <div class="form">
