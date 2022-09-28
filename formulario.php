@@ -13,9 +13,11 @@
     <title>SICOHV</title>
 </head>
 <body>
+    <!--Logo IFAC-->
     <div class="row" id="logo">
         <a href="index.html"><img src="img/if.jpeg" width="200px"/></a>
     </div>
+    <!--Formulário-->
     <div class="row">
         <div class="form">
             <h2>LOGIN</h2>
