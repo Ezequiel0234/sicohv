@@ -30,12 +30,16 @@ div.cabecalho div#portal{
 /* Body */
 
 div#inf{
-    padding: 3px 0 3px 30px;
+    padding: 3px 0 0 30px;
+}
+
+h3{
+    font-size: 25px;
 }
 
 div#container{
     background-color: var(--fund-color);
-    margin-top: 40px;
+    margin-top: 70px;
     border-radius: 8px;
     width: 350px;
     height: 250px;
@@ -66,7 +70,7 @@ div#container{
 
 .curso{
     border-radius: 8px;
-    margin: 10px 0 0 45px;
+    margin: 10px 0 0 55px;
 }
 
 .dp ul li a:hover{
@@ -95,7 +99,7 @@ div#container{
 
 .dp ul li:hover ul{
     display: block;
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
 .dp ul ul li a{
