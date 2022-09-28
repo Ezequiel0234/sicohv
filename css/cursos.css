@@ -81,6 +81,18 @@ div#container{
     width: 100px;
 }
 
+.dp ul ul#first{
+    z-index: 3;
+}
+
+.dp ul ul#second{
+    z-index: 2;
+}
+
+.dp ul ul#third{
+    z-index: 1;
+}
+
 .dp ul li:hover ul{
     display: block;
     margin-left: 50px;
