@@ -1,5 +1,5 @@
 #titulo {
-    margin: 15px 2%;
+    margin: 15px 10%;
     padding: 10px 5%;
     background-color: rgb(146, 241, 175);
     border-radius: 25px;
@@ -18,10 +18,12 @@
     margin: auto;
     border: 1px solid black;
     border-collapse: collapse;
+    display: inline-block;
 }
 
 #horarios tr {
     border: 1px solid black;
+    
 }
 
 #horarios th {

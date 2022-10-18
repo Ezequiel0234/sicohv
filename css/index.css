@@ -2,18 +2,28 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-div {
+div{
     text-align: center;
+}
+.bottom{
+
+    text-align: center;
+    display: inline-block;
+    width: 200px;
 }
 
 button {
-    width: 300px;
+    width: 100%;
     margin: 20px 0;
     font-size: 30px;
     border-radius: 20px;
     background-color: #6dd87f;
     cursor: pointer;
+    border: none;
+  
+}
+button:hover{
+    background-color: #56bb67;
 }
 
 #gap { /*espaço no topo da página*/
