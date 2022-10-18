@@ -5,7 +5,7 @@ $senha = $_POST['senha'];
 // Dados para conexão com banco
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $database = "professores";
 
 // Criar conexão com o banco

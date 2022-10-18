@@ -3,7 +3,7 @@
     // Dados para conexão com banco
     $servername = "localhost";
     $username = "root";
-    $password = "root";
+    $password = "";
     $database = "turmas";
 
     // Criar conexão com o banco
