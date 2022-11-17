@@ -30,5 +30,9 @@
             </form>
         </div>
     </div>
+    <!--Cadastro-->
+    <div class="row">
+        <a href="cadastro.html">Não tem cadastro? Faça aqui</a>
+    </div>
 </body>
 </html>

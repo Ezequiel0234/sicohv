@@ -6,7 +6,7 @@ $senha = $_POST['senha'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "professores";
+$database = "sicohv";
 
 // Criar conexão com o banco
 $conn = new mysqli($servername, $username, $password, $database);

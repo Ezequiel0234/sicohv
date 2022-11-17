@@ -1,0 +1,33 @@
+form {
+    display: inline-block;
+    background-color: greenyellow;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+.labelBox, .inputBox {
+    display: inline-block;
+    text-align: left;
+    margin: 0 5px;
+}
+
+.enviar {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.enviar input {
+    display: inline-block;
+    font-size: 15px;
+    background-color: green;
+    border-color: white;
+    color: white;
+    width: 70px;
+    height: 40px;
+}

@@ -14,7 +14,6 @@
 }
 
 #horarios {
-    width: 90%;
     margin: auto;
     border: 1px solid black;
     border-collapse: collapse;
@@ -23,7 +22,6 @@
 
 #horarios tr {
     border: 1px solid black;
-    
 }
 
 #horarios th {
