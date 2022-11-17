@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Set-2022 às 19:15
+-- Tempo de geração: 17-Nov-2022 às 17:56
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.2
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `turmas`
+-- Banco de dados: `sicohv`
 --
 
 -- --------------------------------------------------------
@@ -85,6 +85,30 @@ INSERT INTO `materias` (`id`, `materia`) VALUES
 (12, 'Prática em Programação WEB'),
 (13, 'Segurança de Aplicação WEB');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `profs`
+--
+
+CREATE TABLE `profs` (
+  `id` int(30) NOT NULL,
+  `usuario` varchar(30) NOT NULL,
+  `senha` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `matricula` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `profs`
+--
+
+INSERT INTO `profs` (`id`, `usuario`, `senha`, `email`, `matricula`) VALUES
+(1, 'Fulano', 'aaaaaa', 'abc@gmail.com', '0000000'),
+(2, 'CiclanFulano', 'aaaaaa', 'abc@gmail.com', '0000001'),
+(3, 'CiclanFulano', 'aaaaaa', 'abc@gmail.com', '0000001'),
+(4, 'Fulano', 'aaaaaaaaa', 'abc@gmail.com', '0000000');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -106,6 +130,22 @@ ALTER TABLE `ipi3`
 --
 ALTER TABLE `materias`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `profs`
+--
+ALTER TABLE `profs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `profs`
+--
+ALTER TABLE `profs`
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restrições para despejos de tabelas
