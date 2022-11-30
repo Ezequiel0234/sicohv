@@ -22,8 +22,8 @@
         <div class="form">
             <h2>LOGIN</h2>
             <form action="autenticacao.php" method="post">
-                <input type="text" id="usuario" name="usuario" placeholder="Usuário">
-                <input type="password" id="senha" name="senha" placeholder="Senha">
+                <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
                 <div id="botao">
                     <button type="submit">Entrar</button>
                 </div>
