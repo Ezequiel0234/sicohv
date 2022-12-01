@@ -1,8 +1,8 @@
 :root{
     --primary-color: #eee;
-    --fund-color: rgb(237, 255, 232);
-    --dp-fundo: rgb(108, 201, 136);
-    --color-hover: rgb(28, 168, 103);
+    --dp-fundo: rgba(64, 223, 90, 0.747);
+    --color-hover: rgba(40, 189, 77, 0.829);
+    --fundo: #2eff1b46;
 }
 
 body{
@@ -14,11 +14,12 @@ body{
 /* Header */
 
 div#logo img{
-    width: 90px;
+    width: 70px;
     padding: 10px 0 5px 15px;
 }
 
 .cabecalho{
+    background-color: rgba(75, 255, 4, 0.205);
     display: flex;
     justify-content: space-between;
 }
@@ -38,14 +39,14 @@ h3{
 }
 
 div#container{
-    background-color: var(--fund-color);
+    background-color: var(--fundo);
     margin-top: 70px;
     border-radius: 8px;
     width: 350px;
     height: 250px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 1px 1px 15px rgba(151, 151, 151, 0.603);
+    box-shadow: 1px 1px 5px rgba(151, 151, 151, 0.438);
 }
 
 .dp ul{

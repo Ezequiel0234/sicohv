@@ -1,6 +1,6 @@
 form {
     display: inline-block;
-    background-color: greenyellow;
+    background-color: rgba(172, 255, 47, 0.623);
     width: 400px;
     border-radius: 20px;
     margin-top: 25px;
@@ -30,4 +30,7 @@ label, input {
     color: white;
     width: 70px;
     height: 40px;
+}
+img{
+    margin: 25px;
 }
