@@ -1,24 +1,3 @@
-<?php
-
-require 'php/conexao.php';
-
-$usuario      = $_POST['usuario'];
-$novo_usuario = $_POST['novo_usuario'];
-$senha        = $_POST['senha'];
-$email        = $_POST['email'];
-$matricula    = $_POST['matricula'];
-$apagar       = $_POST['apagar'];
-
-if ($apagar) {
-    $sql = "DELETE FROM `profs` WHERE usuario = $apagar";
-} else {
-    $sql = "UPDATE `profs` SET `usuario`=$novo_usuario,`senha`=$senha,`email`=$email,`matricula`=$matricula WHERE usuario = $usuario";
-}
-
-$conn->query($sql);
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -53,7 +32,7 @@ $conn->query($sql);
     </div>
     <script>
         var alterar = 
-            '<form method="post" action="?">' +
+            '<form method="post" action="admin-auth.php">' +
                 '<p>Alterar:</p>' +
                 '<div class="col-50">' +
                     '<label>Usuario:</label><br>' +
@@ -73,7 +52,7 @@ $conn->query($sql);
             '</form>'
 
         var apagar =
-            '<form method="post" action="?">' +
+            '<form method="post" action="admin-auth.php">' +
                 '<p>Deletar: </p>' +
                 '<div class="col-25">' +
                     '<label>Usuario:</label>' +
