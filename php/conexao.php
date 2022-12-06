@@ -5,13 +5,9 @@
     $username = "root";
     $password = "";
     $database = "sicohv";
+    $dsn = "mysql:host=" . $servername . ";dbname=" . $database;
 
     // Criar conexão com o banco
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    // Checar conexão
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    $conn = new PDO($dsn, $username, $password);
 
 ?>

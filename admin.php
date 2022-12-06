@@ -16,7 +16,6 @@ if ($apagar) {
 }
 
 $conn->query($sql);
-$conn->close()
 
 ?>
 
@@ -34,7 +33,7 @@ $conn->close()
     <!--logo da página-->
     <div class="row">
         <div id="logo">
-            <img src="img/if.jpeg" width="200px">
+            <img src="img/if.png" width="200px">
         </div>
     </div>
     <!--ações-->

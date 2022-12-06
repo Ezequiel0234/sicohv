@@ -12,7 +12,7 @@
     <!--Início da página-->
     <div class="row">
         <div class="col-25" id="logo">
-            <a href="index.html"><img src="img/if.jpeg" width="90px"></a>
+            <a href="index.html"><img src="img/if.png" width="90px"></a>
         </div>
         <div class="col-75">
             <h2 id="titulo">Portal do aluno</h2>
@@ -40,9 +40,6 @@
 
         $result = $conn->query($sql);
 
-        // Encerrar conexão
-        $conn->close();
-
         // Construção do html da tabela dos horários
         $table = '<table id="horarios"><tr>';
         $columns = ['hora', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
@@ -50,7 +47,7 @@
             $table .= '<th>' . $columns[$i] . '</th>';
         }
         $table .= '<tr><td colspan="7">MATUTINO<td></tr>';        
-        while($row = $result->fetch_assoc()) {
+        while($row = $result->fetch()) {
             $table .= '<tr>';
             for ($i = 0; $i < 7; $i++) {
                 $table .= '<td>' . $row[$columns[$i]] . '</td>';
