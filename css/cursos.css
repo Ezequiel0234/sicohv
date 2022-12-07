@@ -2,7 +2,6 @@
     --primary-color: #eee;
     --dp-fundo: rgba(64, 223, 90, 0.747);
     --color-hover: rgba(40, 189, 77, 0.829);
-    --fundo: #2eff1b46;
 }
 
 body{
@@ -39,7 +38,8 @@ h3{
 }
 
 div#container{
-    background-color: var(--fundo);
+    background-color: #79ff2b5e;
+    border: 2px solid #56c01927;
     margin-top: 70px;
     border-radius: 8px;
     width: 350px;

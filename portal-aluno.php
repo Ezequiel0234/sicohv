@@ -12,7 +12,7 @@
     <!--Início da página-->
     <div class="row">
         <div class="col-25" id="logo">
-            <a href="index.html"><img src="img/if.jpeg" width="90px"></a>
+            <a href="index.html"><img src="img/if.png" width="90px"></a>
         </div>
         <div class="col-75">
             <h2 id="titulo">Portal do aluno</h2>
