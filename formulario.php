@@ -15,7 +15,7 @@
 <body>
     <!--Logo IFAC-->
     <div class="row" id="logo">
-        <a href="index.html"><img src="img/if.jpeg" width="200px"/></a>
+        <a href="index.html"><img src="img/if.png" width="200px"/></a>
     </div>
     <!--Formulário-->
     <div class="row">

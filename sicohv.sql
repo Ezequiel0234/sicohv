@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Nov-2022 às 17:56
+-- Tempo de geração: 06-Dez-2022 às 18:01
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.2
 
@@ -100,16 +100,6 @@ CREATE TABLE `profs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `profs`
---
-
-INSERT INTO `profs` (`id`, `usuario`, `senha`, `email`, `matricula`) VALUES
-(1, 'Fulano', 'aaaaaa', 'abc@gmail.com', '0000000'),
-(2, 'CiclanFulano', 'aaaaaa', 'abc@gmail.com', '0000001'),
-(3, 'CiclanFulano', 'aaaaaa', 'abc@gmail.com', '0000001'),
-(4, 'Fulano', 'aaaaaaaaa', 'abc@gmail.com', '0000000');
-
---
 -- Índices para tabelas despejadas
 --
 
@@ -145,7 +135,7 @@ ALTER TABLE `profs`
 -- AUTO_INCREMENT de tabela `profs`
 --
 ALTER TABLE `profs`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Restrições para despejos de tabelas

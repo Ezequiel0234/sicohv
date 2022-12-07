@@ -2,27 +2,16 @@
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 
-// Dados para conexão com banco
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "sicohv";
-
-// Criar conexão com o banco
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Checar conexão
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require('php/conexao.php');
 
 // sql pra selecionar o usuario e senha
 $sql = "SELECT * FROM profs WHERE usuario = '$usuario' AND senha = '$senha';";
 
 $result = $conn->query($sql);
+$user = $result->fetch();
 
 // Verifica se tem uma ou mais linhas na matriz
-if (mysqli_num_rows($result) > 0){
+if ($user){
     include 'portal-professor.php';
 }
 else{
