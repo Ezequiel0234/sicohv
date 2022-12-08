@@ -2,7 +2,7 @@
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 
-require('php/conexao.php');
+require('conexao.php');
 
 // sql pra selecionar o usuario e senha
 $sql = "SELECT * FROM profs WHERE usuario = '$usuario' AND senha = '$senha';";
@@ -15,7 +15,8 @@ if ($user){
     include 'portal-professor.php';
 }
 else{
-    die("Erro, seu usuário ou senha está incorreto!");
+    echo '<span style="color: white">Erro, seu usuário ou senha está incorreto!</span>';
+    include('formulario.php');
 }
 
 ?>
