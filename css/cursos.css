@@ -1,13 +1,22 @@
 :root{
     --primary-color: #eee;
     --dp-fundo: rgba(64, 223, 90, 0.747);
-    --color-hover: rgba(40, 189, 77, 0.829);
 }
 
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: rgba(7, 80, 43, 0.89)url('../img/if-fundo.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+h1{
+    color: rgb(255, 255, 255);
 }
 
 /* Header */
@@ -18,9 +27,11 @@ div#logo img{
 }
 
 .cabecalho{
-    background-color: rgba(75, 255, 4, 0.205);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.301);
 }
 
 div.cabecalho div#portal{
@@ -35,18 +46,18 @@ div#inf{
 
 h3{
     font-size: 25px;
+    color: rgb(14, 97, 55);
 }
 
 div#container{
-    background-color: #79ff2b5e;
-    border: 2px solid #56c01927;
+    background-color: #ffffff;
     margin-top: 70px;
     border-radius: 8px;
     width: 350px;
     height: 250px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 1px 1px 5px rgba(151, 151, 151, 0.438);
+    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.534);
 }
 
 .dp ul{
@@ -65,7 +76,7 @@ div#container{
     text-decoration: none;
     color: var(--primary-color);
     padding: 10px;
-    background-color: var(--dp-fundo);
+    background-color: rgb(45, 194, 119);
     transition: background .3s;
 }
 
@@ -75,7 +86,7 @@ div#container{
 }
 
 .dp ul li a:hover{
-    background-color: var(--color-hover);
+    background-color: rgb(14, 145, 80);
 }
 
 /* sub menu */

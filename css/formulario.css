@@ -1,8 +1,32 @@
+body{
+  background: rgba(7, 80, 43, 0.89)url('../img/if-fundo.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+div#logo img{
+  width: 70px;
+  padding: 10px 0 5px 15px;
+}
+
+.cabecalho{
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.301);
+}
+
+/* Form */
 .form {
   width: 350px;
-  margin: 0 2.5%;
   overflow: auto;
   display: inline-block;
+  margin-top: 120px;
 }
 
 .form form {
@@ -34,17 +58,31 @@
 .form button {
   box-sizing: border-box;
   display: block;
-  background-color: #6dd87f;
-  border: 2px solid #6dd87f;
+  background-color: #4eb860;
+  border: none;
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 17px;
+  color: white;
   width: 20%;
   margin: 10px 40%;
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 
-#logo {
-  margin-top: 150px;
-  margin-bottom: 25px;
+.form button:hover{
+  background-color: #35a147;
+}
+
+h1{
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  color: rgb(14, 97, 55);
+}
+
+a{
+  text-decoration: none;
+  color:#37e754
 }

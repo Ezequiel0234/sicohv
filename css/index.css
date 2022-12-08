@@ -6,24 +6,66 @@ div{
     text-align: center;
 }
 .bottom{
-
+    margin-top: 150px;
     text-align: center;
     display: inline-block;
-    width: 200px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+body{
+    background: rgba(7, 80, 43, 0.89)url('../img/if-fundo.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+div#logo img{
+    width: 70px;
+    padding: 10px 0 5px 15px;
+}
+
+.cabecalho{
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.301);
 }
 
 button {
-    width: 100%;
+    width: 150px;
     margin: 20px 0;
     font-size: 30px;
     border-radius: 20px;
-    background-color: #6dd87f;
+    background-color: #4cd380;
     cursor: pointer;
     border: none;
-  
+    font-size: 30px;
 }
+
+a{
+    text-decoration: none;
+    color: #3bec70;
+}
+
 button:hover{
-    background-color: #56bb67;
+    background-color: #289954;
+}
+
+#admin{
+    overflow: auto;
+    text-align: center;
 }
 
 #gap { /*espaço no topo da página*/

@@ -9,23 +9,29 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div class="row">
-        <img src="img/if.png" width="150px" alt="logo">
+    <div class="cabecalho">
+        <div id="logo">
+            <a href="index.html"><img src="img/if.png"></a>
+        </div>
+        <div id="portal">
+            <h1>Portal do professor</h1>
+        </div>
     </div>
+
     <div class="row">
         <form action="php/cadastro.php" method="post">
             <br><br>
-            <div class="labelBox">
-                <label for="name" class="labelInput">Nome de usuário</label>
-                <label for="senha" class="labelInput">Senha</label>
-                <label for="email" class="labelInput">Email</label>
-                <label for="name" class="labelInput">Numero de matricula</label>
-            </div>
+            <!-- <div class="labelBox">
+                <label for="name" class="labelInput">Nome de usuário:</label>
+                <label for="senha" class="labelInput">Senha:</label>
+                <label for="email" class="labelInput">Email:</label>
+                <label for="name" class="labelInput">Nº de matrícula:</label>
+            </div> -->
             <div class="inputBox">
-                <input type="text" name="usuario" id="usuario"class="inputUser" required>
-                <input type="password" name="senha" id="senha"class="inputUser" required>
-                <input type="email" name="email" id="email" class="inputUser" required>
-                <input type="text" name="matricula" id="matricula"class="inputUser" required>
+                <input type="text" name="usuario" id="usuario"class="inputUser" placeholder="Usuário" required>
+                <input type="password" name="senha" id="senha"class="inputUser" placeholder="Senha" required>
+                <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+                <input type="text" name="matricula" id="matricula"class="inputUser" placeholder="Nº matrícula" required>
             </div>
             <div class="enviar">
                 <input type="submit" name="submit" id="submit">

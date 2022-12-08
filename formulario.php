@@ -14,8 +14,13 @@
 </head>
 <body>
     <!--Logo IFAC-->
-    <div class="row" id="logo">
-        <a href="index.html"><img src="img/if.png" width="200px"/></a>
+    <div class="cabecalho">
+        <div id="logo">
+            <a href="index.html"><img src="img/if.png"></a>
+        </div>
+        <div id="portal">
+            <h1>Portal do professor</h1>
+        </div>
     </div>
     <!--Formulário-->
     <div class="row">
