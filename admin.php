@@ -10,11 +10,15 @@
 </head>
 <body>
     <!--logo da página-->
-    <div class="row">
+    <div class="cabecalho">
         <div id="logo">
-            <img src="img/if.png" width="200px">
+            <a href="index.html"><img src="img/if.png"></a>
+        </div>
+        <div id="portal">
+            <h1>SICOHV</h1>
         </div>
     </div>
+
     <!--ações-->
     <div class="row">
         <div id="botoes">

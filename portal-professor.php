@@ -10,14 +10,15 @@
 </head>
 <body>
     <!--Início da página-->
-    <div class="row">
-        <div class="col-25" id="logo">
-            <img src="img/if.png" width="90px">
+    <div class="cabecalho">
+        <div id="logo">
+            <a href="index.html"><img src="img/if.png"></a>
         </div>
-        <div class="col-75">
-            <h2 id="titulo">Portal do Professor</h2>
+        <div id="portal">
+            <h1>SICOHV</h1>
         </div>
     </div>
+    
     <div class="row" id="turma">
         <h2>IPI - 3°</h2>
     </div>

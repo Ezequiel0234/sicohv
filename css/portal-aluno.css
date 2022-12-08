@@ -1,3 +1,31 @@
+body{
+    background: rgba(7, 80, 43, 0.89)url('../img/if-fundo.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+div#logo img{
+    width: 70px;
+    padding: 10px 0 5px 15px;
+}
+
+.cabecalho{
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.301);
+}
+
 #titulo {
     margin: 15px 10%;
     padding: 10px 5%;
@@ -5,8 +33,13 @@
     border-radius: 25px;
 }
 
-#logo {
-    margin-top: 15px;
+h2{
+    color: white;
+    margin-top: 40px;
+}
+
+.row{
+    margin-top: 40px;
 }
 
 #turma {
@@ -15,22 +48,21 @@
 
 #horarios {
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.219);
     border-collapse: collapse;
     display: inline-block;
 }
 
-#horarios tr {
-    border: 1px solid black;
-}
-
 #horarios th {
-    background-color: rgb(125, 248, 248);
+    background-color: #012020b0;
+    color: #eee;
     padding: 5px 0;
 }
 
 #horarios tr td {
+    background-color: rgba(3, 43, 22, 0.356);
+    color: rgb(219, 219, 219);
     padding: 5px 0;
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.171);
     font-size: 10px;
 }

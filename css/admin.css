@@ -1,34 +1,68 @@
+body{
+    background: rgba(7, 80, 43, 0.89)url('../img/if-fundo.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+div#logo img{
+    width: 70px;
+    padding: 10px 0 5px 15px;
+}
+
+.cabecalho{
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.301);
+}
+
 #botoes {
     display: inline-block;
-    background-color: #6dd87f;
-    width: 400px;
+    background-color: #ffffffd2;
+    width: 420px;
     height: 100px;
     border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.534);
 }
 
 .botao {
     font-size: larger;
     margin-top: 30px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
 }
 
 #alterar {
-    background-color: yellow;
+    background-color: rgb(255, 183, 50);
+    border: none;
 }
 
 #alterar:hover {
-    background-color: orange;
-    color: white;
+    background-color: rgb(212, 150, 33);
+    color: rgba(255, 255, 255, 0.61);
+    cursor: pointer;
 }
 
 #apagar {
-    background-color: red;
+    background-color: rgb(252, 46, 46);
+    border: none;
 }
 
 #apagar:hover {
-    background-color: brown;
-    color: white;
+    background-color: rgb(185, 20, 20);
+    color: rgba(255, 255, 255, 0.61);
+    cursor: pointer;
 }
 
 #formulario {

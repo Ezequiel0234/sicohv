@@ -1,27 +1,28 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-div{
-    text-align: center;
-}
-.bottom{
-    margin-top: 150px;
-    text-align: center;
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-body{
     background: rgba(7, 80, 43, 0.89)url('../img/if-fundo.jfif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
     background-blend-mode: darken;
+}
+
+.bottom{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 35px 0 0 0;
 }
 
 h1{
@@ -45,19 +46,16 @@ div#logo img{
 
 button {
     width: 150px;
-    margin: 20px 0;
-    font-size: 30px;
+    padding: 8px 0;
+    margin: 0 0 25px 0;
     border-radius: 20px;
-    background-color: #4cd380;
+    background-color: #4cd380cb;
     cursor: pointer;
     border: none;
-    font-size: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: #3bec70;
-}
 
 button:hover{
     background-color: #289954;
@@ -66,6 +64,12 @@ button:hover{
 #admin{
     overflow: auto;
     text-align: center;
+    color: #32db65;
+    text-decoration: none;
+}
+
+#admin:hover{
+    color: #189c40;
 }
 
 #gap { /*espaço no topo da página*/
