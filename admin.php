@@ -17,33 +17,38 @@
     </div>
     <!--registros-->
     <div class="row">
-
-        <?php
-        include('conexao.php');
-        $sql = "SELECT * FROM profs";
-        $result = $conn->query($sql);
-        $registers = $result->fetchAll();
-
-        ?>
-        <!--
-        <form method="post" action="alterar-banco.php">
-            <p>Alterar:</p>
-            <div class="col-50">
-                <label>ID:</label><br>
-                <label>Novo Usuario:</label><br>
-                <label>Nova Senha:</label><br>
-                <label>Novo Email:</label><br>
-                <label>Nova Matrícula:</label><br>
-            </div>
-            <div class="col-50">
-                <input type="number" name="id"><br>
-                <input type="text" name="novo_usuario"><br>
-                <input type="text" name="senha"><br>
-                <input type="text" name="email"><br>
-                <input type="text" name="matricula"><br>
-            </div>
-            <input type="submit">
-        </form>-->
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Senha</th>
+                <th>Email</th>
+                <th>Matricula</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <?php
+            include('conexao.php');
+            $sql = "SELECT * FROM profs";
+            $result = $conn->query($sql);
+            $registers = $result->fetchAll();
+            $num_registers = count($registers);
+            $column_names = array('usuario', 'senha', 'email', 'matricula');
+            for ($i = 0; $i < $num_registers; $i++) {
+                $tr = '<tr>';
+                $tr .= '<form method="post" action="alterar-banco.php">';
+                $tr .= '<td><input type="text" name="id" value="' . $registers[$i][0] . '" readonly></td>';
+                for ($j = 1; $j < 5; $j++) {
+                    $tr .= '<td><input type="text" name="' . $column_names[$j - 1] . '" value="' . $registers[$i][$j] . '"></td>';
+                }
+                $tr .= '<td><input type="submit" name="update" value="Atualizar"></td>';
+                $tr .= '<td><input type="submit" name="delete" value="Deletar"></td>';
+                $tr .= '</form>';
+                $tr .= '</tr>';
+                echo $tr;
+            }
+            ?>
+        </table>
     </div>
 </body>
 </html>
