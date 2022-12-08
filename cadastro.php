@@ -9,6 +9,8 @@ $matricula = $_POST['matricula'];
 
 $sql = "INSERT INTO profs(usuario, senha, email, matricula) VALUES ('$usuario', '$senha', '$email', '$matricula')";
 $conn->query($sql);
-echo 'Cadastro realizado com sucesso!'
+echo '<span style="color: white">Cadastro realizado com sucesso!</span>';
+
+include('formulario.php')
 
 ?>

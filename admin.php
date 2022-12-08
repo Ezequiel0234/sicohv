@@ -21,61 +21,38 @@
 
     <!--ações-->
     <div class="row">
-        <div id="botoes">
-            <div class="col-50">
-                <button class="botao" id="alterar" onclick="exibirAlterar()">Alterar Registro</button>
-            </div>
-            <div class="col-50">
-                <button class="botao" id="apagar" onclick="exibirApagar()">Apagar Registro</button>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Senha</th>
+                <th>Email</th>
+                <th>Matricula</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <?php
+            include('conexao.php');
+            $sql = "SELECT * FROM profs";
+            $result = $conn->query($sql);
+            $registers = $result->fetchAll();
+            $num_registers = count($registers);
+            $column_names = array('usuario', 'senha', 'email', 'matricula');
+            for ($i = 0; $i < $num_registers; $i++) {
+                $tr = '<tr>';
+                $tr .= '<form method="post" action="alterar-banco.php">';
+                $tr .= '<td><input type="text" name="id" value="' . $registers[$i][0] . '" readonly></td>';
+                for ($j = 1; $j < 5; $j++) {
+                    $tr .= '<td><input type="text" name="' . $column_names[$j - 1] . '" value="' . $registers[$i][$j] . '"></td>';
+                }
+                $tr .= '<td><input type="submit" name="update" value="Atualizar"></td>';
+                $tr .= '<td><input type="submit" name="delete" value="Deletar"></td>';
+                $tr .= '</form>';
+                $tr .= '</tr>';
+                echo $tr;
+            }
+            ?>
+        </table>
     </div>
-    <!--formulario-->
-    <div class="row">
-        <div id="formulario"></div>
-    </div>
-    <script>
-        var alterar = 
-            '<form method="post" action="admin-auth.php">' +
-                '<p>Alterar:</p>' +
-                '<div class="col-50">' +
-                    '<label>Usuario:</label><br>' +
-                    '<label>Novo Usuario:</label><br>' +
-                    '<label>Nova Senha:</label><br>' +
-                    '<label>Novo Email:</label><br>' +
-                    '<label>Nova Matrícula:</label><br>' +
-                '</div>' +
-                '<div class="col-50">' +
-                    '<input type="text" name="usuario"><br>' +
-                    '<input type="text" name="novo_usuario"><br>' +
-                    '<input type="text" name="senha"><br>' +
-                    '<input type="text" name="email"><br>' +
-                    '<input type="text" name="matricula"><br>' +
-                '</div>' +
-                '<input type="submit">' +
-            '</form>'
-
-        var apagar =
-            '<form method="post" action="admin-auth.php">' +
-                '<p>Deletar: </p>' +
-                '<div class="col-25">' +
-                    '<label>Usuario:</label>' +
-                '</div>' +
-                '<div class="col-75">' +
-                    '<input type="text" name="apagar">' +
-                '</div>' +
-                '<input type="submit">' +
-            '</form>'
-
-        var formulario = document.getElementById('formulario')
-
-        function exibirAlterar() {
-            formulario.innerHTML = alterar
-        }
-
-        function exibirApagar() {
-            formulario.innerHTML = apagar
-        }
-    </script>
 </body>
 </html>
