@@ -45,8 +45,8 @@
                 for ($j = 1; $j < 5; $j++) {
                     $tr .= '<td><input type="text" name="' . $column_names[$j - 1] . '" value="' . $registers[$i][$j] . '"></td>';
                 }
-                $tr .= '<td><input type="submit" name="update" value="Atualizar"></td>';
-                $tr .= '<td><input type="submit" name="delete" value="Deletar"></td>';
+                $tr .= '<td class="atualiza"><input type="submit" name="update" value="Atualizar"></td>';
+                $tr .= '<td class="deleta"><input type="submit" name="delete" value="Deletar"></td>';
                 $tr .= '</form>';
                 $tr .= '</tr>';
                 echo $tr;

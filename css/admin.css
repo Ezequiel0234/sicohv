@@ -26,46 +26,44 @@ div#logo img{
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0.301);
 }
 
-#botoes {
-    display: inline-block;
-    background-color: #ffffffd2;
-    width: 420px;
-    height: 100px;
-    border-radius: 10px;
-    margin-top: 150px;
-    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.534);
+/* Tabela */
+
+table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.botao {
-    font-size: larger;
-    margin-top: 30px;
-    padding: 10px;
-    border-radius: 20px;
+table tr{
+    background-color: rgba(2, 39, 20, 0.425);
+    color: white;
 }
 
-#alterar {
-    background-color: rgb(255, 183, 50);
+th{
+    padding: 5px;
+    background-color: rgba(1, 31, 16, 0.527);
+}
+
+td{
+    padding: 5px;
+}
+
+input{
+    width: 130px;
+    background-color: transparent;
     border: none;
+    color: white;
+} 
+
+td.atualiza{
+    background-color: rgba(189, 76, 0, 0.425);
 }
 
-#alterar:hover {
-    background-color: rgb(212, 150, 33);
-    color: rgba(255, 255, 255, 0.61);
+td.deleta{
+    background-color: rgba(212, 16, 2, 0.425);
+}
+
+input[type='submit']{
     cursor: pointer;
-}
-
-#apagar {
-    background-color: rgb(252, 46, 46);
-    border: none;
-}
-
-#apagar:hover {
-    background-color: rgb(185, 20, 20);
-    color: rgba(255, 255, 255, 0.61);
-    cursor: pointer;
-}
-
-#formulario {
-    display: inline-block;
-    width: 400px;
 }

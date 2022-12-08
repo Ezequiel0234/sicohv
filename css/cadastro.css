@@ -3,7 +3,7 @@ form {
     background: rgb(255, 255, 255);
     border-radius: 20px;
     width: 300px;
-    height: 320px;
+    height: 340px;
     margin-top: 100px;
     box-shadow: 0 1px 5px rgba(255, 255, 255, 0.534);
 }
@@ -23,6 +23,19 @@ h1{
 
 #cad{
     color: rgb(14, 97, 55);
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+#cad::after{
+    content: '';
+    display: flex;
+    background-color: rgba(14, 97, 55, 0.89);
+    width: 230px;
+    height: 2px;
+    margin-top: 10px;
+    border-radius: 20px;
 }
 
 div#logo img{
@@ -49,28 +62,29 @@ label{
 }
 
 input{
-    border: 1px solid rgb(16, 117, 67);
-    border-radius: 4px;
-    height: 20px;
+    border: 1px solid rgba(5, 104, 55, 0.39);
+    border-radius: 5px;
+    height: 28px;
 }
 
-label, input {
-    display: block;
-    margin: 15px 0;
+input {
+    display: inline-block;
+    margin: 8px 0;
+    width: 70%;
 }
 
 .inputBox {
     display: inline-block;
-    text-align: left;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 10px;
 } 
 
+/* Botão */
 .enviar {
-    margin-bottom: 10px;
+    margin: 5px 0;
     text-align: center;
 }
 
-/* Botão */
 .enviar input {
     display: inline-block;
     font-size: 15px;
