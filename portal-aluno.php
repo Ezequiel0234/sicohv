@@ -26,7 +26,7 @@
         <?php
 
         // Conexão com o banco (dados da conexão armazendados na variável $conn)
-        require 'php/conexao.php';
+        require 'conexao.php';
 
         // Consulta sql:
         $sql = "SELECT hora,
